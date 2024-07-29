@@ -13,7 +13,7 @@ export const conversationsApi = apiSlice.injectEndpoints({
         arg,
         { cacheDataLoaded, cacheEntryRemoved, updateCachedData, dispatch }
       ) {
-        const socket = io("http://localhost:9000", {
+        const socket = io("https://lws-redux-chat-app-assignment.onrender.com", {
           reconnectionDelay: 1000,
           reconnection: true,
           reconnectionAttemps: 10,
